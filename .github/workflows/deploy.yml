@@ -42,4 +42,4 @@ jobs:
       with:
         GITHUB_TOKEN: ${{ secrets.BLOG_TOKEN }}  # 用于部署的令牌
         BRANCH: gh-pages  # 部署的目标分支（通常是 gh-pages）
-        FOLDER: dist  # 部署的文件夹（构建生成的文件夹）
+        FOLDER: docs  # 部署的文件夹（构建生成的文件夹）
