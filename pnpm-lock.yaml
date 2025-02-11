@@ -12,8 +12,8 @@ dependencies:
     specifier: ^5.1.5
     version: 5.1.7(typescript@5.7.3)
   sharp:
-    specifier: ^0.32.5
-    version: 0.32.6(bare-buffer@3.0.2)
+    specifier: ^0.33.5
+    version: 0.33.5
 
 packages:
 
@@ -1042,73 +1042,12 @@ packages:
     engines: {node: '>= 0.4'}
     dev: false
 
-  /b4a@1.6.7:
-    resolution: {integrity: sha1-qZWH1Ou/vVpuOyG9tdX6OFdnq+Q=, tarball: http://registry.m.jd.com/b4a/download/b4a-1.6.7.tgz}
-    dev: false
-
   /bail@2.0.2:
     resolution: {integrity: sha1-0m9c2P5db4MqMVF7n3w1YEC6bV0=, tarball: http://registry.m.jd.com/bail/download/bail-2.0.2.tgz}
     dev: false
 
-  /bare-buffer@3.0.2:
-    resolution: {integrity: sha1-U6kpLpZTxofY5PqfTlgsRaRYCbk=, tarball: http://registry.m.jd.com/bare-buffer/download/bare-buffer-3.0.2.tgz}
-    engines: {bare: '>=1.13.0'}
-    dev: false
-    optional: true
-
-  /bare-events@2.5.4:
-    resolution: {integrity: sha1-FhQ9Q14e2er9GrhfEribM1ekF0U=, tarball: http://registry.m.jd.com/bare-events/download/bare-events-2.5.4.tgz}
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /bare-fs@4.0.1(bare-buffer@3.0.2):
-    resolution: {integrity: sha1-hYRPNNqBnHZ1TVRTI6iyPtNhfHY=, tarball: http://registry.m.jd.com/bare-fs/download/bare-fs-4.0.1.tgz}
-    engines: {bare: '>=1.7.0'}
-    requiresBuild: true
-    dependencies:
-      bare-events: 2.5.4
-      bare-path: 3.0.0
-      bare-stream: 2.6.5(bare-buffer@3.0.2)(bare-events@2.5.4)
-    transitivePeerDependencies:
-      - bare-buffer
-    dev: false
-    optional: true
-
-  /bare-os@3.4.0:
-    resolution: {integrity: sha1-l74xUD8wlb6yMqaHHwEYhZgy6ww=, tarball: http://registry.m.jd.com/bare-os/download/bare-os-3.4.0.tgz}
-    engines: {bare: '>=1.6.0'}
-    requiresBuild: true
-    dev: false
-    optional: true
-
-  /bare-path@3.0.0:
-    resolution: {integrity: sha1-tZ0YEwulKmr5J22z6WouPT6lIXg=, tarball: http://registry.m.jd.com/bare-path/download/bare-path-3.0.0.tgz}
-    requiresBuild: true
-    dependencies:
-      bare-os: 3.4.0
-    dev: false
-    optional: true
-
-  /bare-stream@2.6.5(bare-buffer@3.0.2)(bare-events@2.5.4):
-    resolution: {integrity: sha1-u6joeWdMTCf34ngF3wBcFdeiygc=, tarball: http://registry.m.jd.com/bare-stream/download/bare-stream-2.6.5.tgz}
-    requiresBuild: true
-    peerDependencies:
-      bare-buffer: '*'
-      bare-events: '*'
-    dependencies:
-      bare-buffer: 3.0.2
-      bare-events: 2.5.4
-      streamx: 2.22.0
-    dev: false
-    optional: true
-
   /base-64@1.0.0:
     resolution: {integrity: sha1-CdDyCE4yo/0IwkdblzeI7uauj0o=, tarball: http://registry.m.jd.com/base-64/download/base-64-1.0.0.tgz}
-    dev: false
-
-  /base64-js@1.5.1:
-    resolution: {integrity: sha1-GxtEAWClv3rUC2UPCVljSBkDkwo=, tarball: http://registry.m.jd.com/base64-js/download/base64-js-1.5.1.tgz}
     dev: false
 
   /bcp-47-match@2.0.3:
@@ -1126,14 +1065,6 @@ packages:
   /binary-extensions@2.3.0:
     resolution: {integrity: sha1-9uFKl4WNMnJSIAJC1Mz+UixEVSI=, tarball: http://registry.m.jd.com/binary-extensions/download/binary-extensions-2.3.0.tgz}
     engines: {node: '>=8'}
-    dev: false
-
-  /bl@4.1.0:
-    resolution: {integrity: sha1-RRU1JkGCvsL7vIOmKrmM8R2fezo=, tarball: http://registry.m.jd.com/bl/download/bl-4.1.0.tgz}
-    dependencies:
-      buffer: 5.7.1
-      inherits: 2.0.4
-      readable-stream: 3.6.2
     dev: false
 
   /boolbase@1.0.0:
@@ -1159,13 +1090,6 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       fill-range: 7.1.1
-    dev: false
-
-  /buffer@5.7.1:
-    resolution: {integrity: sha1-umLnwTEzBTWCGXFghRqPZI6Z7tA=, tarball: http://registry.m.jd.com/buffer/download/buffer-5.7.1.tgz}
-    dependencies:
-      base64-js: 1.5.1
-      ieee754: 1.2.1
     dev: false
 
   /camelcase@8.0.0:
@@ -1211,10 +1135,6 @@ packages:
       readdirp: 3.6.0
     optionalDependencies:
       fsevents: 2.3.3
-    dev: false
-
-  /chownr@1.1.4:
-    resolution: {integrity: sha1-b8nXtC0ypYNZYzdmbn0ICE2izGs=, tarball: http://registry.m.jd.com/chownr/download/chownr-1.1.4.tgz}
     dev: false
 
   /ci-info@4.1.0:
@@ -1318,18 +1238,6 @@ packages:
       character-entities: 2.0.2
     dev: false
 
-  /decompress-response@6.0.0:
-    resolution: {integrity: sha1-yjh2Et234QS9FthaqwDV7PCcZvw=, tarball: http://registry.m.jd.com/decompress-response/download/decompress-response-6.0.0.tgz}
-    engines: {node: '>=10'}
-    dependencies:
-      mimic-response: 3.1.0
-    dev: false
-
-  /deep-extend@0.6.0:
-    resolution: {integrity: sha1-xPp8lUBKF6nD6Mp+FTcxK3NjMKw=, tarball: http://registry.m.jd.com/deep-extend/download/deep-extend-0.6.0.tgz}
-    engines: {node: '>=4.0.0'}
-    dev: false
-
   /defu@6.1.4:
     resolution: {integrity: sha1-Tgyc+f9o/l89fydlzBoBLf3LBHk=, tarball: http://registry.m.jd.com/defu/download/defu-6.1.4.tgz}
     dev: false
@@ -1394,12 +1302,6 @@ packages:
 
   /emoji-regex@8.0.0:
     resolution: {integrity: sha1-6Bj9ac5cz8tARZT4QpY79TFkzDc=, tarball: http://registry.m.jd.com/emoji-regex/download/emoji-regex-8.0.0.tgz}
-    dev: false
-
-  /end-of-stream@1.4.4:
-    resolution: {integrity: sha1-WuZKX0UFe682JuwU2gyl5LJDHrA=, tarball: http://registry.m.jd.com/end-of-stream/download/end-of-stream-1.4.4.tgz}
-    dependencies:
-      once: 1.4.0
     dev: false
 
   /entities@4.5.0:
@@ -1528,11 +1430,6 @@ packages:
     resolution: {integrity: sha1-U/X/0KSSrIAHIbtCxmuEHelkI8Q=, tarball: http://registry.m.jd.com/eventemitter3/download/eventemitter3-5.0.1.tgz}
     dev: false
 
-  /expand-template@2.0.3:
-    resolution: {integrity: sha1-bhSz/O4POmNA7LV9LokYaSBSpHw=, tarball: http://registry.m.jd.com/expand-template/download/expand-template-2.0.3.tgz}
-    engines: {node: '>=6'}
-    dev: false
-
   /expressive-code@0.40.1:
     resolution: {integrity: sha1-WW4TzMX2qTc7BMtl6pUUFcQVHrw=, tarball: http://registry.m.jd.com/expressive-code/download/expressive-code-0.40.1.tgz}
     dependencies:
@@ -1544,10 +1441,6 @@ packages:
 
   /extend@3.0.2:
     resolution: {integrity: sha1-+LETa0Bx+9jrFAr/hYsQGewpFfo=, tarball: http://registry.m.jd.com/extend/download/extend-3.0.2.tgz}
-    dev: false
-
-  /fast-fifo@1.3.2:
-    resolution: {integrity: sha1-KG4x3pbrltOKl4mYFXQLoqTzZAw=, tarball: http://registry.m.jd.com/fast-fifo/download/fast-fifo-1.3.2.tgz}
     dev: false
 
   /fast-glob@3.3.3:
@@ -1599,10 +1492,6 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /fs-constants@1.0.0:
-    resolution: {integrity: sha1-a+Dem+mYzhavivwkSXue6bfM2a0=, tarball: http://registry.m.jd.com/fs-constants/download/fs-constants-1.0.0.tgz}
-    dev: false
-
   /fsevents@2.3.3:
     resolution: {integrity: sha1-ysZAd4XQNnWipeGlMFxpezR9kNY=, tarball: http://registry.m.jd.com/fsevents/download/fsevents-2.3.3.tgz}
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
@@ -1613,10 +1502,6 @@ packages:
   /get-east-asian-width@1.3.0:
     resolution: {integrity: sha1-IbQHHuWO0E7g22UzcbVbQpmHU4k=, tarball: http://registry.m.jd.com/get-east-asian-width/download/get-east-asian-width-1.3.0.tgz}
     engines: {node: '>=18'}
-    dev: false
-
-  /github-from-package@0.0.0:
-    resolution: {integrity: sha1-l/tdlr/eiXMxPyDoKI75oWf6ZM4=, tarball: http://registry.m.jd.com/github-from-package/download/github-from-package-0.0.0.tgz}
     dev: false
 
   /github-slugger@2.0.0:
@@ -1900,20 +1785,8 @@ packages:
       '@babel/runtime': 7.26.7
     dev: false
 
-  /ieee754@1.2.1:
-    resolution: {integrity: sha1-jrehCmP/8l0VpXsAFYbRd9Gw01I=, tarball: http://registry.m.jd.com/ieee754/download/ieee754-1.2.1.tgz}
-    dev: false
-
   /import-meta-resolve@4.1.0:
     resolution: {integrity: sha1-+duL6tn6+mGtuBHbd6K/IsU5lwY=, tarball: http://registry.m.jd.com/import-meta-resolve/download/import-meta-resolve-4.1.0.tgz}
-    dev: false
-
-  /inherits@2.0.4:
-    resolution: {integrity: sha1-D6LGT5MpF8NDOg3tVTY6rjdBa3w=, tarball: http://registry.m.jd.com/inherits/download/inherits-2.0.4.tgz}
-    dev: false
-
-  /ini@1.3.8:
-    resolution: {integrity: sha1-op2kJbSIBvNHZ6Tvzjlyaa8oQyw=, tarball: http://registry.m.jd.com/ini/download/ini-1.3.8.tgz}
     dev: false
 
   /inline-style-parser@0.2.4:
@@ -2661,19 +2534,6 @@ packages:
     hasBin: true
     dev: false
 
-  /mimic-response@3.1.0:
-    resolution: {integrity: sha1-LR1Zr5wbEpgVrMwsRqAipc4fo8k=, tarball: http://registry.m.jd.com/mimic-response/download/mimic-response-3.1.0.tgz}
-    engines: {node: '>=10'}
-    dev: false
-
-  /minimist@1.2.8:
-    resolution: {integrity: sha1-waRk52kzAuCCoHXO4MBXdBrEdyw=, tarball: http://registry.m.jd.com/minimist/download/minimist-1.2.8.tgz}
-    dev: false
-
-  /mkdirp-classic@0.5.3:
-    resolution: {integrity: sha1-+hDJEVzG2IZb4iG6R+6b7XhgERM=, tarball: http://registry.m.jd.com/mkdirp-classic/download/mkdirp-classic-0.5.3.tgz}
-    dev: false
-
   /mrmime@2.0.0:
     resolution: {integrity: sha1-FRCCpuBuWamjm0az4U1c/pKzq7Q=, tarball: http://registry.m.jd.com/mrmime/download/mrmime-2.0.0.tgz}
     engines: {node: '>=10'}
@@ -2689,10 +2549,6 @@ packages:
     hasBin: true
     dev: false
 
-  /napi-build-utils@2.0.0:
-    resolution: {integrity: sha1-E8IsAYf8/MzhRhhEE2NypH3cAn4=, tarball: http://registry.m.jd.com/napi-build-utils/download/napi-build-utils-2.0.0.tgz}
-    dev: false
-
   /neotraverse@0.6.18:
     resolution: {integrity: sha1-q8sz3aLo5xPPYyGylAXoIiMM2zA=, tarball: http://registry.m.jd.com/neotraverse/download/neotraverse-0.6.18.tgz}
     engines: {node: '>= 10'}
@@ -2702,17 +2558,6 @@ packages:
     resolution: {integrity: sha1-BVEehGHr+0FZUusLfpoafUBHG9Q=, tarball: http://registry.m.jd.com/nlcst-to-string/download/nlcst-to-string-4.0.0.tgz}
     dependencies:
       '@types/nlcst': 2.0.3
-    dev: false
-
-  /node-abi@3.74.0:
-    resolution: {integrity: sha1-W/tEJCZOrrkUMtKtudojxjowHtA=, tarball: http://registry.m.jd.com/node-abi/download/node-abi-3.74.0.tgz}
-    engines: {node: '>=10'}
-    dependencies:
-      semver: 7.7.1
-    dev: false
-
-  /node-addon-api@6.1.0:
-    resolution: {integrity: sha1-rIRwA05Y5n0MbxIEoYrmmV2cDXY=, tarball: http://registry.m.jd.com/node-addon-api/download/node-addon-api-6.1.0.tgz}
     dev: false
 
   /node-fetch-native@1.6.6:
@@ -2740,12 +2585,6 @@ packages:
 
   /ohash@1.1.4:
     resolution: {integrity: sha1-ro2DAUq4EVfSwoWr93kuKZX63XI=, tarball: http://registry.m.jd.com/ohash/download/ohash-1.1.4.tgz}
-    dev: false
-
-  /once@1.4.0:
-    resolution: {integrity: sha1-WDsap3WWHUsROsF9nFC6753Xa9E=, tarball: http://registry.m.jd.com/once/download/once-1.4.0.tgz}
-    dependencies:
-      wrappy: 1.0.2
     dev: false
 
   /oniguruma-to-es@2.3.0:
@@ -2891,25 +2730,6 @@ packages:
       source-map-js: 1.2.1
     dev: false
 
-  /prebuild-install@7.1.3:
-    resolution: {integrity: sha1-1jCrrSsUdEPyCiEpF76uaLgJLuw=, tarball: http://registry.m.jd.com/prebuild-install/download/prebuild-install-7.1.3.tgz}
-    engines: {node: '>=10'}
-    hasBin: true
-    dependencies:
-      detect-libc: 2.0.3
-      expand-template: 2.0.3
-      github-from-package: 0.0.0
-      minimist: 1.2.8
-      mkdirp-classic: 0.5.3
-      napi-build-utils: 2.0.0
-      node-abi: 3.74.0
-      pump: 3.0.2
-      rc: 1.2.8
-      simple-get: 4.0.1
-      tar-fs: 2.1.2
-      tunnel-agent: 0.6.0
-    dev: false
-
   /preferred-pm@4.0.0:
     resolution: {integrity: sha1-ayVqRNORgfs4KbOrvZ6i6tbbCCs=, tarball: http://registry.m.jd.com/preferred-pm/download/preferred-pm-4.0.0.tgz}
     engines: {node: '>=18.12'}
@@ -2936,38 +2756,12 @@ packages:
     resolution: {integrity: sha1-YhL7tSunV+ku9PudZXVjuTO3/+w=, tarball: http://registry.m.jd.com/property-information/download/property-information-6.5.0.tgz}
     dev: false
 
-  /pump@3.0.2:
-    resolution: {integrity: sha1-g28+3WvC7lmSVskk/+DYhXPdy/g=, tarball: http://registry.m.jd.com/pump/download/pump-3.0.2.tgz}
-    dependencies:
-      end-of-stream: 1.4.4
-      once: 1.4.0
-    dev: false
-
   /queue-microtask@1.2.3:
     resolution: {integrity: sha1-SSkii7xyTfrEPg77BYyve2z7YkM=, tarball: http://registry.m.jd.com/queue-microtask/download/queue-microtask-1.2.3.tgz}
     dev: false
 
   /radix3@1.1.2:
     resolution: {integrity: sha1-/SfSrziWxr9Lzfq2Qnxpwq/GnsA=, tarball: http://registry.m.jd.com/radix3/download/radix3-1.1.2.tgz}
-    dev: false
-
-  /rc@1.2.8:
-    resolution: {integrity: sha1-zZJL9SAKB1uDwYjNa54hG3/A0+0=, tarball: http://registry.m.jd.com/rc/download/rc-1.2.8.tgz}
-    hasBin: true
-    dependencies:
-      deep-extend: 0.6.0
-      ini: 1.3.8
-      minimist: 1.2.8
-      strip-json-comments: 2.0.1
-    dev: false
-
-  /readable-stream@3.6.2:
-    resolution: {integrity: sha1-VqmzbqllwAxak+8x6xEaDxEFaWc=, tarball: http://registry.m.jd.com/readable-stream/download/readable-stream-3.6.2.tgz}
-    engines: {node: '>= 6'}
-    dependencies:
-      inherits: 2.0.4
-      string_decoder: 1.3.0
-      util-deprecate: 1.0.2
     dev: false
 
   /readdirp@3.6.0:
@@ -3237,10 +3031,6 @@ packages:
       queue-microtask: 1.2.3
     dev: false
 
-  /safe-buffer@5.2.1:
-    resolution: {integrity: sha1-Hq+fqb2x/dTsdfWPnNtOa3gn7sY=, tarball: http://registry.m.jd.com/safe-buffer/download/safe-buffer-5.2.1.tgz}
-    dev: false
-
   /sax@1.4.1:
     resolution: {integrity: sha1-RMyJiDd/EmME07P8EBDHM7kp7w8=, tarball: http://registry.m.jd.com/sax/download/sax-1.4.1.tgz}
     dev: false
@@ -3249,23 +3039,6 @@ packages:
     resolution: {integrity: sha1-q9UJjYKxjGyB9gdP8mR/0+ciDJ8=, tarball: http://registry.m.jd.com/semver/download/semver-7.7.1.tgz}
     engines: {node: '>=10'}
     hasBin: true
-    dev: false
-
-  /sharp@0.32.6(bare-buffer@3.0.2):
-    resolution: {integrity: sha1-atMMC3zZEN9l1fNV93SqT85Fcyo=, tarball: http://registry.m.jd.com/sharp/download/sharp-0.32.6.tgz}
-    engines: {node: '>=14.15.0'}
-    requiresBuild: true
-    dependencies:
-      color: 4.2.3
-      detect-libc: 2.0.3
-      node-addon-api: 6.1.0
-      prebuild-install: 7.1.3
-      semver: 7.7.1
-      simple-get: 4.0.1
-      tar-fs: 3.0.8(bare-buffer@3.0.2)
-      tunnel-agent: 0.6.0
-    transitivePeerDependencies:
-      - bare-buffer
     dev: false
 
   /sharp@0.33.5:
@@ -3297,7 +3070,6 @@ packages:
       '@img/sharp-win32-ia32': 0.33.5
       '@img/sharp-win32-x64': 0.33.5
     dev: false
-    optional: true
 
   /shiki@1.29.2:
     resolution: {integrity: sha1-XJN3Hy1TBc6cBZdcM2iRFqJ9xlc=, tarball: http://registry.m.jd.com/shiki/download/shiki-1.29.2.tgz}
@@ -3310,18 +3082,6 @@ packages:
       '@shikijs/types': 1.29.2
       '@shikijs/vscode-textmate': 10.0.1
       '@types/hast': 3.0.4
-    dev: false
-
-  /simple-concat@1.0.1:
-    resolution: {integrity: sha1-9Gl2CCujXCJj8cirXt/ibEHJVS8=, tarball: http://registry.m.jd.com/simple-concat/download/simple-concat-1.0.1.tgz}
-    dev: false
-
-  /simple-get@4.0.1:
-    resolution: {integrity: sha1-SjnbVJKHyXnTUhEvoD/Zn9a8NUM=, tarball: http://registry.m.jd.com/simple-get/download/simple-get-4.0.1.tgz}
-    dependencies:
-      decompress-response: 6.0.0
-      once: 1.4.0
-      simple-concat: 1.0.1
     dev: false
 
   /simple-swizzle@0.2.2:
@@ -3367,15 +3127,6 @@ packages:
     resolution: {integrity: sha1-5J/VhL0cYzYT4BC8c7nbSctQJK0=, tarball: http://registry.m.jd.com/stream-replace-string/download/stream-replace-string-2.0.0.tgz}
     dev: false
 
-  /streamx@2.22.0:
-    resolution: {integrity: sha1-zXteV8larvD/myrveQWvpi7G5Kc=, tarball: http://registry.m.jd.com/streamx/download/streamx-2.22.0.tgz}
-    dependencies:
-      fast-fifo: 1.3.2
-      text-decoder: 1.2.3
-    optionalDependencies:
-      bare-events: 2.5.4
-    dev: false
-
   /string-width@4.2.3:
     resolution: {integrity: sha1-JpxxF9J7Ba0uU2gwqOyJXvnG0BA=, tarball: http://registry.m.jd.com/string-width/download/string-width-4.2.3.tgz}
     engines: {node: '>=8'}
@@ -3392,12 +3143,6 @@ packages:
       emoji-regex: 10.4.0
       get-east-asian-width: 1.3.0
       strip-ansi: 7.1.0
-    dev: false
-
-  /string_decoder@1.3.0:
-    resolution: {integrity: sha1-QvEUWUpGzxqOMLCoT1bHjD7awh4=, tarball: http://registry.m.jd.com/string_decoder/download/string_decoder-1.3.0.tgz}
-    dependencies:
-      safe-buffer: 5.2.1
     dev: false
 
   /stringify-entities@4.0.4:
@@ -3426,61 +3171,10 @@ packages:
     engines: {node: '>=4'}
     dev: false
 
-  /strip-json-comments@2.0.1:
-    resolution: {integrity: sha1-PFMZQukIwml8DsNEhYwobHygpgo=, tarball: http://registry.m.jd.com/strip-json-comments/download/strip-json-comments-2.0.1.tgz}
-    engines: {node: '>=0.10.0'}
-    dev: false
-
   /style-to-object@1.0.8:
     resolution: {integrity: sha1-Z6KbykfqpYfbGBGNaPnZWVXoEpI=, tarball: http://registry.m.jd.com/style-to-object/download/style-to-object-1.0.8.tgz}
     dependencies:
       inline-style-parser: 0.2.4
-    dev: false
-
-  /tar-fs@2.1.2:
-    resolution: {integrity: sha1-Ql8VTzQEyxbLj/bmcdRasu2VlsU=, tarball: http://registry.m.jd.com/tar-fs/download/tar-fs-2.1.2.tgz}
-    dependencies:
-      chownr: 1.1.4
-      mkdirp-classic: 0.5.3
-      pump: 3.0.2
-      tar-stream: 2.2.0
-    dev: false
-
-  /tar-fs@3.0.8(bare-buffer@3.0.2):
-    resolution: {integrity: sha1-j2IBJTfV/4klLQHkhpDcTr7TOrc=, tarball: http://registry.m.jd.com/tar-fs/download/tar-fs-3.0.8.tgz}
-    dependencies:
-      pump: 3.0.2
-      tar-stream: 3.1.7
-    optionalDependencies:
-      bare-fs: 4.0.1(bare-buffer@3.0.2)
-      bare-path: 3.0.0
-    transitivePeerDependencies:
-      - bare-buffer
-    dev: false
-
-  /tar-stream@2.2.0:
-    resolution: {integrity: sha1-rK2EwoQTawYNw/qmRHSqmuvXcoc=, tarball: http://registry.m.jd.com/tar-stream/download/tar-stream-2.2.0.tgz}
-    engines: {node: '>=6'}
-    dependencies:
-      bl: 4.1.0
-      end-of-stream: 1.4.4
-      fs-constants: 1.0.0
-      inherits: 2.0.4
-      readable-stream: 3.6.2
-    dev: false
-
-  /tar-stream@3.1.7:
-    resolution: {integrity: sha1-JLP7XqutoZ/nM47W0m5ffEgueSs=, tarball: http://registry.m.jd.com/tar-stream/download/tar-stream-3.1.7.tgz}
-    dependencies:
-      b4a: 1.6.7
-      fast-fifo: 1.3.2
-      streamx: 2.22.0
-    dev: false
-
-  /text-decoder@1.2.3:
-    resolution: {integrity: sha1-sZ2jZNmBsjJtX0MJnDEMyA13DGU=, tarball: http://registry.m.jd.com/text-decoder/download/text-decoder-1.2.3.tgz}
-    dependencies:
-      b4a: 1.6.7
     dev: false
 
   /tinyexec@0.3.2:
@@ -3520,12 +3214,6 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
-
-  /tunnel-agent@0.6.0:
-    resolution: {integrity: sha1-J6XeoGs2sEoKmWZ3SykIaPD8QP0=, tarball: http://registry.m.jd.com/tunnel-agent/download/tunnel-agent-0.6.0.tgz}
-    dependencies:
-      safe-buffer: 5.2.1
-    dev: false
 
   /type-fest@4.33.0:
     resolution: {integrity: sha1-LaDBNbmvp2z4sY7P1PJg7NQUpDI=, tarball: http://registry.m.jd.com/type-fest/download/type-fest-4.33.0.tgz}
@@ -3820,10 +3508,6 @@ packages:
       ansi-styles: 6.2.1
       string-width: 7.2.0
       strip-ansi: 7.1.0
-    dev: false
-
-  /wrappy@1.0.2:
-    resolution: {integrity: sha1-tSQ9jz7BqjXxNkYFvA0QNuMKtp8=, tarball: http://registry.m.jd.com/wrappy/download/wrappy-1.0.2.tgz}
     dev: false
 
   /xxhash-wasm@1.1.0:
