@@ -6,6 +6,7 @@ import starlight from '@astrojs/starlight';
 export default defineConfig({
 	base: '/wy-blog',
 	site:'https://wang9977.github.io/wy-blog',
+
 	integrations: [
 
 		starlight({
