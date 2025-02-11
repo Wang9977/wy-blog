@@ -9,7 +9,7 @@ export default defineConfig({
 			title: 'Blog',
 			logo: {src:'./src/assets/logo.webp'},
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/Wang9977/wy-blog',
 			},
 			// sidebar: [
 			// 	// {

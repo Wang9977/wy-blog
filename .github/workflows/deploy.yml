@@ -1,0 +1,42 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]  # 当主分支（main）有新提交时触发
+  pull_request:
+    branches: [ main ]  # 当主分支有 Pull Request 时触发
+
+env:
+  GITHUB_TOKEN: ${{ secrets.BLOG_TOKEN }}  # 用于操作仓库的令牌
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest  # 使用 Ubuntu 最新版本的运行器
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3  # 检出代码
+
+    - name: Install Node.js and npm
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18.x'  # 设置 Node.js 版本
+        cache: 'npm'  # 缓存 npm 依赖
+
+    - name: Install dependencies
+      run: npm install  # 安装项目依赖
+
+    - name: Build the project
+      run: npm run build  # 构建项目（生成 dist 或 build 文件夹）
+
+    - name: Configure Git
+      run: |
+        git config --global user.name ${{ github.actor }}
+        git config --global user.email ${{ github.actor }}@users.noreply.github.com
+
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        GITHUB_TOKEN: ${{ secrets.BLOG_TOKEN }}  # 用于部署的令牌
+        BRANCH: main  # 部署的目标分支（通常是 gh-pages）
+        FOLDER: dist  # 部署的文件夹（构建生成的文件夹）
