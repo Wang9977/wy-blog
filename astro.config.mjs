@@ -4,7 +4,10 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	// base: '/dist',
+	site:'https://wang9977.github.io/wy-blogs',
 	integrations: [
+
 		starlight({
 			title: 'Blog',
 			logo: {src:'./src/assets/logo.webp'},
