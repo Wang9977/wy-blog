@@ -41,5 +41,5 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         GITHUB_TOKEN: ${{ secrets.BLOG_TOKEN }}  # 用于部署的令牌
-        BRANCH: main  # 部署的目标分支（通常是 gh-pages）
+        BRANCH: gh-pages  # 部署的目标分支（通常是 gh-pages）
         FOLDER: dist  # 部署的文件夹（构建生成的文件夹）
