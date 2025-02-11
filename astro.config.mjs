@@ -4,8 +4,8 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
-	base: '/wy-blogs',
-	site:'https://wang9977.github.io/wy-blogs',
+	base: '/wy-blog',
+	site:'https://wang9977.github.io/wy-blog',
 	integrations: [
 
 		starlight({
