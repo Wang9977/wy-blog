@@ -1,45 +1,40 @@
 name: Deploy to GitHub Pages
 
 on:
+  # 每次推送到 `main` 分支时触发这个“工作流程”
+  # 如果你使用了别的分支名，请按需将 `main` 替换成你的分支名
   push:
-    branches: [ main ]  # 当主分支（main）有新提交时触发
-  pull_request:
-    branches: [ main ]  # 当主分支有 Pull Request 时触发
+    branches: [ main ]
+  # 允许你在 GitHub 上的 Actions 标签中手动触发此“工作流程”
+  workflow_dispatch:
 
+# 允许 job 克隆 repo 并创建一个 page deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 env:
   GITHUB_TOKEN: ${{ secrets.BLOG_TOKEN }}  # 用于操作仓库的令牌
-
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest  # 使用 Ubuntu 最新版本的运行器
-
+  build:
+    runs-on: ubuntu-latest
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v3  # 检出代码
+      - name: Checkout your repository using git
+        uses: actions/checkout@v4
+      - name: Install, build, and upload your site
+        uses: withastro/action@v3
+        with:
+          # path: . # 存储库中 Astro 项目的根位置。（可选）
+          node-version: '18.x' # 用于构建站点的特定 Node.js 版本，默认为 20。（可选）
+          package-manager: pnpm@latest # 应使用哪个 Node.js 包管理器来安装依赖项和构建站点。会根据存储库中的 lockfile 自动检测。（可选）
 
-    - name: Install Node.js and npm
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18.x'
-
-    - name: Install pnpm
-      run: |
-        npm install -g pnpm
-
-    - name: Install dependencies
-      run: pnpm install
-
-    - name: Build the project
-      run: pnpm run build
-
-    - name: Configure Git
-      run: |
-        git config --global user.name ${{ github.actor }}
-        git config --global user.email ${{ github.actor }}@users.noreply.github.com
-
-    - name: Deploy to GitHub Pages
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        GITHUB_TOKEN: ${{ secrets.BLOG_TOKEN }}  # 用于部署的令牌
-        BRANCH: gh-pages  # 部署的目标分支（通常是 gh-pages）
-        FOLDER: dist  # 部署的文件夹（构建生成的文件夹）
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
