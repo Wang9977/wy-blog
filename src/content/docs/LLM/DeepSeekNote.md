@@ -3,9 +3,6 @@ title: DeepSeekNote By DeepSeekR1
 description: 使用DeepSeekR1学习《DeepSeek从入门到精通》生成的笔记
 ---
 
-# 《DeepSeek：从入门到精通》阅读笔记
-
----
 
 ## 一、DeepSeek 基础介绍
 
