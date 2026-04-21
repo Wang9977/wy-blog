@@ -1,17 +1,51 @@
 {
-  "name": "puffy-parsec",
+  "name": "yna-tech-blog",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "description": "个人技术博客，分享前端、CSS、Git等技术知识",
+  "author": "Yna",
+  "license": "MIT",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "check": "astro check",
+    "type-check": "tsc --noEmit",
+    "lint": "eslint . --ext .js,.ts,.tsx,.astro",
+    "format": "prettier --write .",
+    "clean": "rm -rf dist .astro",
+    "deploy": "npm run build && npm run preview"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.31.1",
     "astro": "^5.1.5",
-    "sharp": "^0.32.5"
-  }
+    "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "@typescript-eslint/eslint-plugin": "^8.18.2",
+    "@typescript-eslint/parser": "^8.18.2",
+    "eslint": "^9.17.0",
+    "eslint-plugin-astro": "^1.3.1",
+    "prettier": "^3.4.2",
+    "prettier-plugin-astro": "^0.14.1",
+    "typescript": "^5.7.2"
+  },
+  "keywords": [
+    "blog",
+    "astro",
+    "starlight",
+    "documentation",
+    "tech"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wang9977/wy-blog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wang9977/wy-blog/issues"
+  },
+  "homepage": "https://wang9977.github.io/wy-blog/"
 }

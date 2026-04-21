@@ -1,36 +1,47 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
+title: Yna's Tech Blog
+description: 个人技术博客，分享前端开发、CSS布局、Git使用等实用技术知识
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: 探索前端技术的奥秘，分享实用开发经验
   image:
-    file: ../../assets/houston.webp
+    file: ../../assets/logo.webp
+    alt: "Yna Blog Logo"
   actions:
-    - text: Example Guide
-      link: /guides/example/
+    - text: 开始学习
+      link: /wy-blog/css/overview/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+      variant: primary
+    - text: 查看所有文章
+      link: /wy-blog/guides/example/
+      icon: open-book
+    - text: GitHub 源码
+      link: https://github.com/Wang9977/wy-blog
       icon: external
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { Card, CardGrid } from "@astrojs/starlight/components";
 
-## Next steps
+## 热门主题
 
 <CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+  <Card title="CSS 布局技巧" icon="rocket">
+    掌握5种经典CSS布局方案，从基础到进阶的完整指南
+  </Card>
+  <Card title="Git 版本控制" icon="git-branch">
+    实用的Git命令和最佳实践，提高开发效率
+  </Card>
+  <Card title="前端开发" icon="code">
+    现代前端开发技术和工具分享
+  </Card>
+  <Card title="持续更新" icon="update">
+    定期分享最新技术文章和开发经验
+  </Card>
 </CardGrid>
+
+## 最新文章
+
+- [CSS 5 种经典布局详解](/wy-blog/css/classic-layouts/)
+- [内联元素垂直排列原理](/wy-blog/css/inline-elements/)
+- [Git 常用命令大全](/wy-blog/git/commands/)

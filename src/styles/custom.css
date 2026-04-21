@@ -1,0 +1,58 @@
+/* 自定义样式 */
+:root {
+  --brand-primary: #2563eb;
+  --brand-secondary: #64748b;
+  --brand-accent: #f59e0b;
+}
+
+/* 代码块样式优化 */
+.prose pre {
+  border-radius: 0.5rem;
+  border: 1px solid #e2e8f0;
+}
+
+/* 图片样式优化 */
+.prose img {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* 表格样式优化 */
+.prose table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.prose th,
+.prose td {
+  border: 1px solid #e2e8f0;
+  padding: 0.75rem;
+}
+
+.prose th {
+  background-color: #f8fafc;
+  font-weight: 600;
+}
+
+/* 链接样式优化 */
+.prose a {
+  color: var(--brand-primary);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.prose a:hover {
+  border-bottom-color: var(--brand-primary);
+}
+
+/* 响应式优化 */
+@media (max-width: 768px) {
+  .hero {
+    padding: 2rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
