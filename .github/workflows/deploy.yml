@@ -33,16 +33,18 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      # 1. 先安装 pnpm
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: latest
+
+      # 2. 再设置 Node.js (这样 cache: 'pnpm' 才能找到 pnpm 执行路径)
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '20'
           cache: 'pnpm'
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v2
-        with:
-          version: latest
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
